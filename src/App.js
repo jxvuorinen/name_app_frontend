@@ -11,7 +11,6 @@ const App = () => {
   const [parameter, setParameter] = useState('');
 
   useEffect(() => {
-    console.log('effect')
     nameService.getAll()
       .then(data => {
         setNames(data.names)
